@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3npjprm8yjlp"]
+
+[ext_resource type="Texture2D" uid="uid://ekk71aciq60f" path="res://res/background.png" id="1_6ito4"]
+[ext_resource type="Script" path="res://playbutton.gd" id="1_xbhr7"]
+
+[node name="Startscene" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(959, 111)
+texture = ExtResource("1_6ito4")
+
+[node name="Header" type="Label" parent="."]
+offset_left = 69.0
+offset_top = 102.0
+offset_right = 1126.0
+offset_bottom = 239.0
+theme_override_font_sizes/font_size = 100
+text = "Runeword Summoner"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 543.0
+offset_top = 410.0
+offset_right = 631.0
+offset_bottom = 473.0
+theme_override_font_sizes/font_size = 40
+text = "Play"
+script = ExtResource("1_xbhr7")
+
+[connection signal="button_up" from="Button" to="Button" method="_on_button_up"]

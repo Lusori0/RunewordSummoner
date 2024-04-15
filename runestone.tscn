@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmr1iknft5hq3"]
+
+[ext_resource type="Script" path="res://Rune.gd" id="1_tdg06"]
+[ext_resource type="Texture2D" uid="uid://bs1yttxaqjaav" path="res://res/Runes.png" id="2_3g61k"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_tdg06")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.167, 0.167)
+texture = ExtResource("2_3g61k")
+hframes = 2
+vframes = 2
+frame = 3
+region_rect = Rect2(0, 0, 600, 600)
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(100, 100)
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+tooltip_text = "Test tooltip"
+color = Color(0.411765, 0.207843, 0.054902, 0)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdqm6bq35a5wv"]
+
+[ext_resource type="Script" path="res://text.gd" id="1_ubysf"]
+
+[node name="Endscreen" type="Node2D"]
+
+[node name="text" type="Label" parent="."]
+offset_left = 409.0
+offset_top = 253.0
+offset_right = 801.0
+offset_bottom = 363.0
+theme_override_font_sizes/font_size = 80
+text = "YOU WON"
+script = ExtResource("1_ubysf")
